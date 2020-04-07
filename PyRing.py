@@ -149,13 +149,13 @@ def motionVidDownload_Doorbell():
 	for doorbell_cam_motion in range(doorbell_cam_num):
 		try:
 			doorbell = devices['doorbots'][doorbell_cam_motion]
-			print("\n[+]Downloading ding from doorbell camera number [{}]...".format(stickup_cam_motion))
+			print("\n[+]Downloading ding from doorbell camera number [{}]...".format(doorbell_cam_motion))
 			doorbell.recording_download(
 			  doorbell.history(limit=100, kind='ding')[0]['id'],
-								filename='Doorbell_Camera_Num_{}.mp4'.format(stickup_cam_motion),
+								filename='Doorbell_Camera_Num_{}.mp4'.format(doorbell_cam_motion),
 								override=True)
 
-			print( + doorbell.recording_url(doorbell.last_recording_id))
+			print("[+]Recording Link:" + doorbell.recording_url(doorbell.last_recording_id))
 		except:
 			pass
 

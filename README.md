@@ -23,13 +23,6 @@ A Ring device health and motion API written in Python, Version:2.0
 <li>cd PyRing & python PyRing.py</li>
 </ul>
 
-# What is new?
-In version 1.3 I have fixed some issues and added light control for stickup cameras!
-
-
-# Donate: 
-
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WC23MQ7LFTA2Q&source=url
 
 # Contact:
 <h3>Janinirami@gmail.com</h3>
